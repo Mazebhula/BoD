@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="CENTER" hgap="10" vgap="10"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="org.denzhe.demo1.HelloController"
+          prefHeight="400.0" prefWidth="600.0"
+          style="-fx-background-color: lightblue;"
+          >
+    <Label text="Username" GridPane.columnIndex="1" GridPane.rowIndex="0"> Username</Label>
+    <TextField fx:id = "userNameField" GridPane.columnIndex="1" GridPane.rowIndex="1">enter user name</TextField>
+    <Label text="Password" GridPane.columnIndex="1" GridPane.rowIndex="2">Password</Label>
+    <TextField fx:id = "PasswordField" GridPane.columnIndex="1" GridPane.rowIndex="3">enter password</TextField>
+    <Button text="submit" GridPane.columnIndex="1" GridPane.rowIndex="4" onAction="#onSubmit">Login</Button>
+</GridPane>
+
