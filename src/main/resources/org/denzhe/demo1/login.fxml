@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
-<GridPane alignment="CENTER" hgap="10" vgap="10"
-          xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml"
-          fx:controller="org.denzhe.demo1.HelloController"
-          prefHeight="400.0" prefWidth="600.0"
-          style="-fx-background-color: lightblue;"
-          >
-    <Label text="Username" GridPane.columnIndex="1" GridPane.rowIndex="0"> Username</Label>
-    <TextField fx:id = "userNameField" GridPane.columnIndex="1" GridPane.rowIndex="1">enter user name</TextField>
-    <Label text="Password" GridPane.columnIndex="1" GridPane.rowIndex="2">Password</Label>
-    <TextField fx:id = "PasswordField" GridPane.columnIndex="1" GridPane.rowIndex="3">enter password</TextField>
-    <Button text="submit" GridPane.columnIndex="1" GridPane.rowIndex="4" onAction="#onSubmit">Login</Button>
-</GridPane>
-
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="LOGIN" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.denzhe.demo1.HelloController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.63" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightblue;">
+         <children>
+            <PasswordField fx:id="password" layoutX="201.0" layoutY="174.0" />
+            <PasswordField fx:id="username" layoutX="201.0" layoutY="126.0" />
+            <TextArea layoutX="123.0" layoutY="29.0" prefHeight="70.0" prefWidth="315.0" style="-fx-background-color: light blue;" text="Welcome to Bank of Denzhe" />
+            <Label layoutX="253.0" layoutY="109.0" text="username" />
+            <Label layoutX="253.0" layoutY="157.0" text="Password" />
+            <Button layoutX="253.0" layoutY="211.0" mnemonicParsing="false" text="Submit" onAction="#onSubmit" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
